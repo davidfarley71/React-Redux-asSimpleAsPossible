@@ -1,7 +1,16 @@
 .App {
   text-align: center;
+
+}
+.container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.displayInlineBlock{
+margin: 10px;
+display: inline-block;
+
 }
 
 .App-logo {

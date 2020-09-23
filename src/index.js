@@ -38,7 +38,7 @@ const todoReducer = (state = {
     return state;
 };
 
-const numReducer = (state = {
+const primitiveReducer = (state = {
     num: 0,
 }, action) => {
     switch (action.type) {
@@ -82,7 +82,7 @@ const objReducer = (state = {
 };
 
 
-export const store = createStore(combineReducers({ todoReducer, numReducer, objReducer }));
+export const store = createStore(combineReducers({ todoReducer, primitiveReducer, objReducer }));
 
 store.subscribe(() => {
     console.log("Store updated!", store.getState());
